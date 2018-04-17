@@ -1432,7 +1432,7 @@
         "rm -rf /app/share/doc/ghc-8.0.2",
         "rm -rf /app/share/man",
         "rm -rf /app/share/x86_64-linux-ghc-8.0.2/p*",
-        "rm -rf /app/share/x86_64-linux-ghc-8.0.2/h*"
+        "rm -rf  /app/share/x86_64-linux-ghc-8.0.2/h*"
       ],
       "sources": [
         {
