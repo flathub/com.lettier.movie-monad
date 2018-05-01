@@ -1144,7 +1144,7 @@
       ]
     },
     {
-      "name": "haskell-gi-0.21.0",
+      "name": "haskell-gi-0.21.1",
       "only-arches": [
         "x86_64"
       ],
@@ -1158,8 +1158,8 @@
       "sources": [
         {
           "type": "archive",
-          "sha256": "91ef9404189b3016a27b3ba266673a328bf57e826c728b27953daddc7b7c3281",
-          "url": "https://hackage.haskell.org/package/haskell-gi-0.21.0/haskell-gi-0.21.0.tar.gz"
+          "sha256": "366043449f2070652ed28c9f12410d950ea35870947ca956363989cd00971a5a",
+          "url": "https://hackage.haskell.org/package/haskell-gi-0.21.1/haskell-gi-0.21.1.tar.gz"
         }
       ]
     },
@@ -1344,7 +1344,7 @@
       ]
     },
     {
-      "name": "gi-gdkpixbuf-2.0.15",
+      "name": "gi-gdkpixbuf-2.0.16",
       "only-arches": [
         "x86_64"
       ],
@@ -1358,8 +1358,8 @@
       "sources": [
         {
           "type": "archive",
-          "sha256": "19b51a6e8a9cb79eb47a74131dc22278c473bf69d7f98ba64df54127e1c54b48",
-          "url": "https://hackage.haskell.org/package/gi-gdkpixbuf-2.0.15/gi-gdkpixbuf-2.0.15.tar.gz"
+          "sha256": "fdbb5f12ecd3a419a345919913e659f90000b38b973ce79fb6e9ba05f5d4166f",
+          "url": "https://hackage.haskell.org/package/gi-gdkpixbuf-2.0.16/gi-gdkpixbuf-2.0.16.tar.gz"
         }
       ]
     },
@@ -1415,13 +1415,10 @@
         "./Setup build",
         "./Setup install",
         "mkdir -p /app/share/metainfo /app/share/appdata /app/share/applications /app/share/icons/hicolor/scalable/apps",
-        "sed -i 's/<id>com\\.lettier\\.movie-monad<\\/id>/<id>com\\.lettier\\.movie-monad\\.desktop<\\/id>/' packaging/linux/common/movie-monad.appdata.xml",
-        "sed -i 's/<launchable type=\"desktop-id\">movie-monad\\.desktop<\\/launchable>/<launchable type=\"desktop-id\">com\\.lettier\\.movie-monad\\.desktop<\\/launchable>/' packaging/linux/common/movie-monad.appdata.xml",
-        "cp packaging/linux/common/movie-monad.appdata.xml /app/share/metainfo/com.lettier.movie-monad.appdata.xml",
-        "cp packaging/linux/common/movie-monad.appdata.xml /app/share/appdata/com.lettier.movie-monad.appdata.xml",
-        "sed -i 's/movie-monad-icon/com\\.lettier\\.movie-monad/' packaging/linux/common/movie-monad.desktop",
-        "cp packaging/linux/common/movie-monad.desktop /app/share/applications/com.lettier.movie-monad.desktop",
-        "cp packaging/linux/common/movie-monad-icon.svg /app/share/icons/hicolor/scalable/apps/com.lettier.movie-monad.svg"
+        "cp packaging/linux/common/com.lettier.movie-monad.appdata.xml /app/share/metainfo/",
+        "cp packaging/linux/common/com.lettier.movie-monad.appdata.xml /app/share/appdata/",
+        "cp packaging/linux/common/com.lettier.movie-monad.desktop /app/share/applications/",
+        "cp packaging/linux/common/com.lettier.movie-monad.svg /app/share/icons/hicolor/scalable/apps/"
       ],
       "post-install": [
         "rm -rf /app/bin/g*",
@@ -1438,7 +1435,7 @@
       "sources": [
         {
           "type": "git",
-          "tag": "0.0.6.0",
+          "tag": "0.0.6.1",
           "url": "https://github.com/lettier/movie-monad.git"
         }
       ]
