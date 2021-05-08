@@ -1,3 +1,4 @@
 {
-  "skip-arches": ["aarch64", "arm", "i386"]
+  "skip-arches": ["aarch64", "arm", "i386"],
+  "end-of-life": "This application is no longer maintained because it's not been maintained in 3 years."
 }
