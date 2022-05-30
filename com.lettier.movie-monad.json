@@ -1,7 +1,7 @@
 {
   "app-id": "com.lettier.movie-monad",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.26",
+  "runtime-version": "42",
   "sdk": "org.gnome.Sdk",
   "command": "movie-monad",
   "finish-args": [
@@ -11,13 +11,11 @@
     "--device=dri",
     "--share=network",
     "--socket=pulseaudio",
-    "--talk-name=org.gtk.vfs",
     "--talk-name=org.gtk.vfs.*",
+    "--filesystem=xdg-run/gvfsd",
     "--talk-name=org.gnome.SettingsDaemon.MediaKeys",
-    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
     "--filesystem=host",
-    "--filesystem=xdg-run/dconf",
-    "--talk-name=ca.desrt.dconf"
+    "--metadata=X-DConf=migrate-path=/com/lettier/movie-monad"
   ],
   "modules": [
     {
